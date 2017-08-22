@@ -29,7 +29,7 @@ body {
       position: relative;
       z-index: 99999;
       padding-top: 15px;
-      padding-bottom: 40px;
+      padding-bottom: 55px;
       p {
         font-family: MontserratLight, serif;
         color: rgba(255, 255, 255, 0.64);
@@ -54,7 +54,7 @@ body {
     width: 100%;
     padding-bottom: 50px;
     @include background("../shop/index_4/bg_content.png");
-    margin-top: -30px;
+    margin-top: -40px;
     position: absolute;
     height: 100%;
     .carousel{

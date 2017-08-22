@@ -17,10 +17,8 @@
 /*size of p content*/
 /*size h1 */
 /*height of input and content form*/
-body {
+body, .container {
   font-family: MontserratLight, serif;
-  padding: 0;
-  margin: 0;
   width: 100%; }
 
 /*# sourceMappingURL=variables.css.map */
