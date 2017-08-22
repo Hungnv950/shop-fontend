@@ -1,0 +1,42 @@
+@font-face {
+  font-family: monsterBlack;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+/*font monsterRegular*/
+@font-face {
+  font-family: monsterRegular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+/*font monsterLight*/
+@font-face {
+  font-family: monsterLight;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+/*font monsterBold*/
+@font-face {
+  font-family: monsterBold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+/*Color from left filed*/
+$color_content_left: #fd4968;
+/*Color from right filed*/
+$color_content_right: #fc624e;
+/*Color text*/
+$color_text: #02145a;
+/*color bg 1*/
+$color_bg_1: #feb9be;
+/*color bg 2*/
+$color_bg_2: #fecdd4;
+/*color opacity*/
+$color_opacity: #e1e2eb;
+$color_footer: #a3a5bb;
+/*size of p content*/
+$size_p: 15px;
+/*size h1 */
+$size_h: 25px;
+/*height of input and content form*/
+$height_input: 60px;
