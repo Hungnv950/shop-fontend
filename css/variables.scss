@@ -12,7 +12,7 @@ $color_content_left: #fd4968;
 /*Color from right filed*/
 $color_content_right: #fc624e;
 /*Color text*/
-$color_text: #02145A;
+$color_text: #02145a;
 /*color bg 1*/
 $color_bg_1: #feb9be;
 /*color bg 2*/
@@ -21,9 +21,9 @@ $color_bg_2: #fecdd4;
 $color_opacity: #e1e2eb;
 $color_footer: #a3a5bb;
 /*size of p content*/
-$size_p: 13px;
+$size_p: 15px;
 /*size h1 */
-$size_h: 21px;
+$size_h: 25px;
 /*height of input and content form*/
 $height_input: 60px;
 
@@ -31,4 +31,12 @@ body {
   font-family: MontserratLight, serif;
   padding: 0;
   margin: 0;
+}
+
+@mixin line_1($bg_url) {
+  text-align: center;
+  background: url($bg_url);
+  height: 35px;
+  margin-top: 30px;
+  background-size: cover;
 }

@@ -1,0 +1,14 @@
+@import "variables";
+body{
+  .content_feed_2 {
+    .newfeed_line {
+      background: url(../imgs/icon_line_4.png);
+      height: 40px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 6px;
+    }
+  }
+}
