@@ -20,7 +20,8 @@ body {
   margin: 0; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 35px; }
   header p {
     font-family: MontserratsemiBold, serif;
     padding-top: 20px;
@@ -28,7 +29,6 @@ header {
     font-size: 13px;
     letter-spacing: 2px; }
   header h1 {
-    font-family: MontserratLight, serif;
     color: #02145a;
     letter-spacing: 2px;
     font-size: 21px;
@@ -37,8 +37,81 @@ header {
 content {
   background: url("../imgs/bg1.png");
   background-size: cover;
-  height: auto; }
+  height: auto;
+  position: relative;
+  height: 2000px;
+  /* Rounded sliders */ }
   content .content_top {
-    background: url("../imgs/field.png"); }
+    background: url("../imgs/field.png");
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px; }
+    content .content_top p {
+      color: #fff;
+      font-family: MontserratsemiBold, serif;
+      font-size: 13px;
+      padding: 20px; }
+  content .form-control {
+    border-radius: 0;
+    border: 0;
+    padding: 25px 10px;
+    margin: 1px; }
+  content .btn_choose {
+    padding: 25px 0; }
+  content .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 30px; }
+  content .switch input {
+    display: none; }
+  content .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  content .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 1px;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  content input:checked + .slider {
+    background-color: #fd4968; }
+  content input:focus + .slider {
+    box-shadow: 0 0 1px #fd4968; }
+  content input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px); }
+  content .slider.round {
+    border-radius: 34px; }
+  content .slider.round:before {
+    border-radius: 50%; }
+
+footer {
+  background: url("../imgs/field.png");
+  background-size: cover;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0; }
+  footer p {
+    color: #fff;
+    font-family: MontserratsemiBold, serif;
+    font-size: 13px;
+    padding: 20px; }
 
 /*# sourceMappingURL=index_1.css.map */
