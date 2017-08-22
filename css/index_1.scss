@@ -1,0 +1,21 @@
+@import "variables";
+
+header {
+  text-align: center;
+  p {
+    font-family: MontserratsemiBold, serif;
+    padding-top: 20px;
+    color: $color_text;
+    font-weight: bold;
+    font-size: $size_p;
+    letter-spacing: 2px;
+  }
+  h1 {
+    font-family: MontserratLight, serif;
+    color: $color_text;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: $size_h;
+    padding-top: 0;
+  }
+}
