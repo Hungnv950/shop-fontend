@@ -5,10 +5,52 @@ body {
   color: #fff;
   @include background("../imgs/bg2.png");
 }
+
 header {
-
+  padding: 30px 0 10px;
+  position: fixed;
+  color: #02145a;
+  border-bottom: 1px solid #fff;
+  .header_top {
+    text-align: center;
+    .back {
+      font-size: $size_back;
+    }
+    p {
+      font-size: $size_p;
+    }
+  }
+  .search {
+    color: #fff;
+    margin-top: 25px;
+    .form-control {
+      border-radius: 0;
+      border: 0;
+      padding: 25px 10px;
+      background: none;
+      color: #fff;
+      font-size: 24px;
+      box-shadow: none;
+    }
+    .form-control::-webkit-input-placeholder {
+      color: $color_opacity;
+    }
+    .form-control:focus {
+      border-color: $color_content_left;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #fff;
+    }
+    img {
+      height: 20px;
+    }
+  }
 }
-content {
 
+content {
+  p {
+    padding: 20px;
+  }
 }
 

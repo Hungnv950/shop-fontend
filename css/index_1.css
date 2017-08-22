@@ -4,6 +4,9 @@
 @font-face {
   font-family: MontserratLight;
   src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
 /*Color from left filed*/
 /*Color from right filed*/
 /*Color text*/
@@ -14,11 +17,36 @@
 /*size of p content*/
 /*size h1 */
 /*height of input and content form*/
-body {
+/*size back*/
+body, header, content, footer .container {
   font-family: MontserratLight, serif;
   padding: 0;
   margin: 0;
   width: 100%; }
+
+header {
+  padding-top: 20px; }
+
+.header-fixed {
+  padding-top: 185px; }
+
+.active {
+  background: #B4B9CE; }
+
+/*button header */
+.header_choose {
+  margin-top: 20px; }
+  .header_choose p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0; }
+    .header_choose p.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px; }
+    .header_choose p.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0; }
 
 body {
   background: url("../imgs/bg1.png");
@@ -30,7 +58,6 @@ header {
   padding-bottom: 35px; }
   header p {
     font-family: MontserratsemiBold, serif;
-    padding-top: 20px;
     color: #02145a;
     font-size: 13px;
     letter-spacing: 2px; }
