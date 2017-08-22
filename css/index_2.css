@@ -38,7 +38,7 @@ header {
   header .header_top {
     text-align: center; }
     header .header_top .back {
-      font-size: 30px; }
+      font-size: 40px; }
     header .header_top p {
       font-size: 13px; }
   header .search {
@@ -62,5 +62,8 @@ header {
       color: #fff; }
     header .search img {
       height: 20px; }
+
+content p {
+  padding: 20px; }
 
 /*# sourceMappingURL=index_2.css.map */
