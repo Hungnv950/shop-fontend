@@ -1,24 +1,5 @@
 @import "variables";
-@mixin body_4 {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background: #ffbeb0;
-  background: -webkit-linear-gradient(top, #ffbeb0, #feb9bf); /*Safari 5.1-6*/
-  background: -o-linear-gradient(bottom, #ffbeb0, #feb9bf); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(bottom, #ffbeb0, #feb9bf); /*Fx 3.6-15*/
-  background: linear-gradient(to bottom, #ffbeb0, #feb9bf); /*Standard*/
-}
-@mixin line_1($bg_url) {
-  text-align: center;
-  background: url($bg_url);
-  height: 35px;
-  margin-top: 30px;
-  background-size: cover;
-}
-
 body{
-  @include body_4;
   .content_feed_2 {
     .newfeed_line {
       background: url(../imgs/icon_line_4.png);

@@ -26,3 +26,11 @@ $size_p: 15px;
 $size_h: 25px;
 /*height of input and content form*/
 $height_input: 60px;
+
+@mixin line_1($bg_url) {
+  text-align: center;
+  background: url($bg_url);
+  height: 35px;
+  margin-top: 30px;
+  background-size: cover;
+}
