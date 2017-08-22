@@ -1,0 +1,291 @@
+@import "variables";
+//style for page 7
+
+@mixin page_7_title_h1 {
+  font-family: MontserratLight, serif;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+@mixin title_top_p_7 {
+  font-family: MontserratsemiBold, serif;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+body {
+  /*header 7*/
+  header {
+    text-align: center;
+    //margin-bottom: 20px;
+    @include background("../imgs/header_7.png");
+    height: 100%;
+    p {
+      @include title_top_p_7;
+      padding-top: 50px;
+      font-family: monsterBold, serif;
+    }
+    h1 {
+      @include page_7_title_h1;
+      font-family: monsterLight, serif;
+      color: #02135a;
+    }
+    .header_choose {
+      padding: 30px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      p {
+        font-size: 15px;
+        font-family: monsterBlack, serif;
+        padding: 20px 30px;
+        margin-bottom: 0;
+        &.left {
+          border: 1px solid #000;
+          border-right: 1px solid #000;
+          border-radius: 70px 0 0 70px;
+        }
+        &.right {
+          border: 1px solid #000;
+          border-radius: 0 70px 70px 0;
+        }
+
+      }
+    }
+
+    .title_top {
+      h1 {
+        @include page_7_title_h1;
+        font-size: 21px;
+      }
+      p {
+        @include title_top_p_7;
+        padding: 0 0 5px 0;
+        font-size: 13px;
+        font-family: MontserratLight,serif!important;
+      }
+    }
+    .header_top {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      .content_feed_2_close {
+        background: url("../imgs/icon_cart_full.png");
+        width: 10px;
+        height: 10px;
+        background-size: cover;
+        padding-top: 30px;
+        background-repeat: no-repeat;
+        margin-top: 42px;
+        z-index: 1;
+      }
+      span {
+        &.back {
+          padding-top: 40px;
+          font-size: 40px;
+        }
+      }
+      .cart {
+        position: relative;
+        .badge {
+          display: inline-block;
+          padding: 5px;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 1;
+          color: #333;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          border-radius: 19px;
+          width: 28px;
+          height: 28px;
+          margin-top: 34px;
+          background: rgb(245, 245, 245);
+          z-index: 2;
+          position: absolute;
+          margin-left: -30px;
+        }
+      }
+    }
+  }
+
+  /*content 7*/
+  content {
+    background: #fff;
+    color: #02135a;
+    text-align: center;
+    margin-top: -5px;
+    height: 100%;
+    .product_first {
+      padding: 25px 10px;
+      border-bottom: 1px solid #dedbdf;
+      border-top: 1px solid #dedbdf;
+      img {
+        padding: 20px;
+        width: 95%;
+      }
+    }
+    .money_big {
+      padding: 10px 0;
+      .money_img {
+        img {
+          padding-top: 22px;
+          width: 35px;
+        }
+      }
+      h1 {
+        font-family: MontserratLight, serif;
+        font-size: 39px;
+      }
+    }
+    .money_er {
+      .money_img {
+        margin-left: -466px;
+      }
+      p {
+        padding: 25px 0;
+        color: #a2a6c6;
+        font-family: MontserratLight, serif;
+        font-size: 13px;
+      }
+    }
+    .logo_image {
+      padding: 15px 0;
+      overflow: auto;
+      .col-xs-4 {
+        padding-left: 0 !important;
+      }
+      .img_icon {
+        img {
+          width: 100%;
+        }
+      }
+      .title_car {
+        font-family: MontserratsemiBold, serif;
+        font-size: 13px;
+        padding-top: 10px;
+        padding-left: 0 !important;
+      }
+      .img_custom {
+        padding: 10px 5px;
+        img {
+          width: 70%;
+          height: 70%;
+        }
+      }
+    }
+    .title_pro1 {
+      background: #fcd7c7; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(left top, #fbd4cc, #fbd4cf); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right, #fbd4cc, #fbd4cf); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right, #fbd4cc, #fbd4cf); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to bottom right, #fbd4cc, #fbd4cf); /* Standard syntax */
+      p {
+        font-family: MontserratRegular, serif;
+        font-size: 11px;
+        text-align: left;
+        font-weight: bold;
+        padding: 15px 15px 15px;
+      }
+    }
+    .tag_1 {
+      //border-bottom: 1px solid #ffadbb;
+      border-top: 1px solid #ffadbb;
+      height: auto;
+      overflow: auto;
+      background: #fff;
+      .pull-left {
+        span {
+          font-size: 13px;
+          font-family: MontserratLight, serif;
+          padding: 15px 0;
+          height: auto;
+          float: left;
+        }
+      }
+      .pull-right {
+        span {
+          font-size: 13px;
+          padding: 15px 0;
+          height: auto;
+          float: right;
+        }
+        &.custom_font {
+          font-family: MontserratLight, serif;
+        }
+        .icon_right {
+          font-size: 25px;
+        }
+
+        img {
+          float: right;
+          padding: 25px;
+        }
+      }
+    }
+    .product {
+      @include produce;
+      margin-top: 10px !important;
+      img {
+        @include produce_img;
+      }
+      .content_text {
+        @include produce_content_text_border;
+        overflow: auto;
+        .name {
+          @include produce_content_text_name;
+          font-size: 12px !important;
+        }
+        .own {
+          @include produce_content_text_own;
+          float: left;
+          font-size: 10px !important;
+          margin-top: -7px;
+        }
+      }
+      .content_price {
+        display: block;
+        .price {
+          margin: $margin_price;
+          .money {
+            @include produce_price_money;
+            float: left;
+          }
+          span {
+            @include produce_price_span;
+          }
+        }
+        .icon_money {
+          margin: $margin_price
+        }
+        .price_plus {
+          @include produce_price_plus;
+          padding: 8px !important;
+          margin-top: 22px !important;
+        }
+      }
+    }
+    .touch_slider {
+      @include touch_slide;
+      height: auto;
+      padding-bottom: 120px;
+      h1 {
+        font-size: 20px;
+        font-family: MontserratLight, serif;
+        color: #02135a;
+        padding: 15px 0 0;
+        text-align: left;
+      }
+    }
+    .carousel-inner{
+      margin: 0 -15px;
+    }
+  }
+  footer {
+    @include footer;
+  }
+}
+
