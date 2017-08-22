@@ -1,0 +1,49 @@
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf); }
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+/*Color from left filed*/
+/*Color from right filed*/
+/*Color text*/
+/*color bg 1*/
+/*color bg 2*/
+/*color opacity*/
+/*size of p content*/
+/*size h1 */
+/*height of input and content form*/
+body .bg-home {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+  body .bg-home .content_feed_2 {
+    padding-top: 40px;
+    width: 100%; }
+    body .bg-home .content_feed_2 .content_feed_2_close:hover {
+      width: 40px;
+      height: 80px; }
+    body .bg-home .content_feed_2 .content_feed_2_close.cart_5 {
+      float: right; }
+  body .bg-home h1 {
+    padding-top: 0 !important; }
+  body .bg-home .newfeed_2_top {
+    height: 120px;
+    text-align: center;
+    position: relative;
+    z-index: 99999;
+    padding-top: 50px; }
+    body .bg-home .newfeed_2_top p {
+      font-family: MontserratLight,serif;
+      color: rgba(255, 255, 255, 0.64);
+      font-weight: bold;
+      font-size: 25px; }
+    body .bg-home .newfeed_2_top .icon_remove_banner {
+      background-image: url(../imgs/icon_remove_5.png);
+      width: 25px;
+      height: 26px;
+      float: right;
+      background-size: cover;
+      margin-right: 15px;
+      margin-top: 20px; }
+
+/*# sourceMappingURL=index_4.css.map */
