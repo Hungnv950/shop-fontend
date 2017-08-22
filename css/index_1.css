@@ -66,6 +66,8 @@ content {
   content .btn_choose {
     padding: 25px 0;
     background: #fff; }
+    content .btn_choose p {
+      font-size: 13px; }
   content .switch {
     position: relative;
     display: inline-block;

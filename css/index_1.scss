@@ -41,6 +41,9 @@ content {
   .btn_choose {
     padding: 25px 0;
     background: #fff;
+    p {
+      font-size: $size_p;
+    }
   }
   @include on-off;
 }
