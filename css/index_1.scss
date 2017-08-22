@@ -6,16 +6,22 @@ header {
     font-family: MontserratsemiBold, serif;
     padding-top: 20px;
     color: $color_text;
-    font-weight: bold;
     font-size: $size_p;
     letter-spacing: 2px;
   }
   h1 {
     font-family: MontserratLight, serif;
     color: $color_text;
-    font-weight: bold;
     letter-spacing: 2px;
     font-size: $size_h;
     padding: 0;
+  }
+}
+content {
+  background: url("../imgs/bg1.png");
+  background-size: cover;
+  height: auto;
+  .content_top {
+    background: url("../imgs/field.png");
   }
 }

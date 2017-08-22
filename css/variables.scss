@@ -19,6 +19,7 @@ $color_bg_1: #feb9be;
 $color_bg_2: #fecdd4;
 /*color opacity*/
 $color_opacity: #e1e2eb;
+/*colorfooter*/
 $color_footer: #a3a5bb;
 /*size of p content*/
 $size_p: 13px;
@@ -39,4 +40,10 @@ body {
   height: 35px;
   margin-top: 30px;
   background-size: cover;
+}
+
+@mixin background($url) {
+  background: url($url);
+  background-size: cover;
+  height: auto;
 }

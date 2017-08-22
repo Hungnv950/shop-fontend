@@ -10,6 +10,7 @@
 /*color bg 1*/
 /*color bg 2*/
 /*color opacity*/
+/*colorfooter*/
 /*size of p content*/
 /*size h1 */
 /*height of input and content form*/
@@ -24,15 +25,20 @@ header {
     font-family: MontserratsemiBold, serif;
     padding-top: 20px;
     color: #02145a;
-    font-weight: bold;
     font-size: 13px;
     letter-spacing: 2px; }
   header h1 {
     font-family: MontserratLight, serif;
     color: #02145a;
-    font-weight: bold;
     letter-spacing: 2px;
     font-size: 21px;
     padding: 0; }
+
+content {
+  background: url("../imgs/bg1.png");
+  background-size: cover;
+  height: auto; }
+  content .content_top {
+    background: url("../imgs/field.png"); }
 
 /*# sourceMappingURL=index_1.css.map */
