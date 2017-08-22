@@ -1,7 +1,12 @@
 @import "variables";
 
+body {
+  @include background("../imgs/bg1.png");
+}
+
 header {
   text-align: center;
+  padding-bottom: 35px;
   p {
     font-family: MontserratsemiBold, serif;
     padding-top: 20px;
@@ -10,18 +15,39 @@ header {
     letter-spacing: 2px;
   }
   h1 {
-    font-family: MontserratLight, serif;
     color: $color_text;
     letter-spacing: 2px;
     font-size: $size_h;
     padding: 0;
   }
 }
+
 content {
-  background: url("../imgs/bg1.png");
-  background-size: cover;
-  height: auto;
+  position: relative;
   .content_top {
-    background: url("../imgs/field.png");
+    @include field;
+    margin-top: 80px;
   }
+  .form-group {
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+  .form-control {
+    border-radius: 0;
+    border: 0;
+    padding: 25px 10px;
+    margin-bottom: 1px;
+  }
+  .btn_choose {
+    padding: 25px 0;
+    background: #fff;
+    p {
+      font-size: $size_p;
+    }
+  }
+  @include on-off;
+}
+
+footer {
+  @include footer;
 }
