@@ -10,11 +10,12 @@
 /*Color from left filed*/
 /*Color from right filed*/
 /*Color text*/
-/*color bg 1*/
+/*color $color_content_12*/
 /*color bg 2*/
 /*color opacity*/
 /*colorfooter*/
 /*size of p content*/
+/*size p small*/
 /*size h1 */
 /*height of input and content form*/
 /*size back*/
@@ -48,11 +49,16 @@ header {
       border: 1px solid #000;
       border-radius: 0 70px 70px 0; }
 
+/*button back*/
+.back {
+  font-size: 40px; }
+
 body {
   font-size: 24px;
   color: #fff;
   background: url("../imgs/bg2.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: auto; }
 
 header {
@@ -78,7 +84,7 @@ header {
       font-size: 24px;
       box-shadow: none; }
     header .search .form-control::-webkit-input-placeholder {
-      color: #e1e2eb; }
+      color: #9AA1BD; }
     header .search .form-control:focus {
       border-color: #fd4968;
       outline: 0;

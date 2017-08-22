@@ -10,11 +10,12 @@
 /*Color from left filed*/
 /*Color from right filed*/
 /*Color text*/
-/*color bg 1*/
+/*color $color_content_12*/
 /*color bg 2*/
 /*color opacity*/
 /*colorfooter*/
 /*size of p content*/
+/*size p small*/
 /*size h1 */
 /*height of input and content form*/
 /*size back*/
@@ -48,9 +49,14 @@ header {
       border: 1px solid #000;
       border-radius: 0 70px 70px 0; }
 
+/*button back*/
+.back {
+  font-size: 40px; }
+
 body {
   background: url("../imgs/bg1.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: auto; }
 
 header {
@@ -73,6 +79,7 @@ content {
   content .content_top {
     background: url("../imgs/field.png");
     background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
     text-align: center;
     width: 100%;
@@ -138,11 +145,13 @@ content {
 footer {
   background: url("../imgs/field.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: auto;
   text-align: center;
   width: 100%;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  margin-top: 100px; }
   footer p {
     color: #fff;
     font-family: MontserratsemiBold, serif;
