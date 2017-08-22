@@ -1,4 +1,9 @@
 @import "variables";
+
+body {
+  @include background("../imgs/bg1.png");
+}
+
 header {
   text-align: center;
   padding-bottom: 35px;
@@ -16,22 +21,26 @@ header {
     padding: 0;
   }
 }
+
 content {
-  @include background("../imgs/bg1.png");
   position: relative;
-  height: 2000px;
   .content_top {
     @include field;
-    margin-top: 40px;
+    margin-top: 80px;
+  }
+  .form-group {
+    margin-top: -10px;
+    margin-bottom: 0;
   }
   .form-control {
     border-radius: 0;
-    border:0;
+    border: 0;
     padding: 25px 10px;
-    margin: 1px;
+    margin-bottom: 1px;
   }
   .btn_choose {
     padding: 25px 0;
+    background: #fff;
   }
   @include on-off;
 }

@@ -17,7 +17,13 @@
 body {
   font-family: MontserratLight, serif;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
+
+body {
+  background: url("../imgs/bg1.png");
+  background-size: cover;
+  height: auto; }
 
 header {
   text-align: center;
@@ -35,11 +41,7 @@ header {
     padding: 0; }
 
 content {
-  background: url("../imgs/bg1.png");
-  background-size: cover;
-  height: auto;
   position: relative;
-  height: 2000px;
   /* Rounded sliders */ }
   content .content_top {
     background: url("../imgs/field.png");
@@ -47,19 +49,23 @@ content {
     height: auto;
     text-align: center;
     width: 100%;
-    margin-top: 40px; }
+    margin-top: 80px; }
     content .content_top p {
       color: #fff;
       font-family: MontserratsemiBold, serif;
       font-size: 13px;
       padding: 20px; }
+  content .form-group {
+    margin-top: -10px;
+    margin-bottom: 0; }
   content .form-control {
     border-radius: 0;
     border: 0;
     padding: 25px 10px;
-    margin: 1px; }
+    margin-bottom: 1px; }
   content .btn_choose {
-    padding: 25px 0; }
+    padding: 25px 0;
+    background: #fff; }
   content .switch {
     position: relative;
     display: inline-block;

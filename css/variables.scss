@@ -2,6 +2,7 @@
   font-family: MontserratsemiBold;
   src: url(../fonts/Montserrat-SemiBold.ttf);
 }
+
 @font-face {
   font-family: MontserratLight;
   src: url(../fonts/Montserrat-Light.ttf);
@@ -32,6 +33,7 @@ body {
   font-family: MontserratLight, serif;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 @mixin background($url) {
@@ -51,6 +53,7 @@ body {
     padding: 20px;
   }
 }
+
 @mixin footer {
   @include field;
   position: fixed;
