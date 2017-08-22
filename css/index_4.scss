@@ -2,10 +2,56 @@
 
 body {
   .bg-home {
+     .content_feed_2 {
+       padding-top: 30px;
+       width: 100%;
+       @include background('../shop/index_4/header.png');
+       .content_feed_2_close {
+         @include icon_shop;
+         &:hover {
+           width: 40px;
+           height: 80px;
+         }
+         &.cart_5 {
+           float: right;
+         }
+       }
+       h1 {
+         @include header_title_h1;
+       }
+     }
+
+     .content_feed_3_back {
+       @include icon_map;
+     }
+     .newfeed_2_top {
+       text-align: center;
+       position: relative;
+       z-index: 99999;
+       padding-top: 15px;
+       padding-bottom: 55px;
+       p {
+         font-family: MontserratLight, serif;
+         color: rgba(255, 255, 255, 0.64);
+         font-size: 24px;
+       }
+       h1 {
+         @include header_title_h1;
+       }
+       .icon_remove_banner {
+         background-image: url(../shop/index_4/remove.png);
+         width: 25px;
+         height: 26px;
+         float: right;
+         background-size: cover;
+         margin-right: 15px;
+         margin-top: 20px;
+       }
+     }
     .content_feed_2 {
       padding-top: 30px;
       width: 100%;
-      @include background('../shop/index_4/header.png');
+      @include background('../imgs/header.png');
       .content_feed_2_close {
         @include icon_shop;
         &:hover {
@@ -29,7 +75,7 @@ body {
       position: relative;
       z-index: 99999;
       padding-top: 15px;
-      padding-bottom: 40px;
+      padding-bottom: 55px;
       p {
         font-family: MontserratLight, serif;
         color: rgba(255, 255, 255, 0.64);
@@ -39,7 +85,7 @@ body {
         @include header_title_h1;
       }
       .icon_remove_banner {
-        background-image: url(../shop/index_4/remove.png);
+        background-image: url(../imgs/remove.png);
         width: 25px;
         height: 26px;
         float: right;
@@ -48,13 +94,12 @@ body {
         margin-top: 20px;
       }
     }
-
-  }
+   }
   content {
     width: 100%;
     padding-bottom: 50px;
-    @include background("../shop/index_4/bg_content.png");
-    margin-top: -30px;
+    @include background("../imgs/bg_content.png");
+    margin-top: -40px;
     position: absolute;
     height: 100%;
     .carousel{
@@ -113,7 +158,7 @@ body {
           }
         }
         .price_plus {
-          background: url(../shop/index_4/plus.png);
+          background: url(../imgs/plus.png);
           color: $color_text;
           padding: 10px;
           background-size: contain;
