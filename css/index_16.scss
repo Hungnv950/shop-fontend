@@ -1,0 +1,65 @@
+@import "variables";
+
+body {
+  font-size: 24px;
+  color: $color_text;
+  @include background("../imgs/bg1.png");
+  height: auto;
+  text-align: center;
+}
+
+header {
+  padding: 20px 0;
+  .header_top {
+    .back {
+      font-size: $size_back;
+    }
+    p {
+      font-size: $size_p;
+    }
+  }
+}
+
+.content-fluid {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+content {
+  margin-top: 15px;
+  display: -webkit-inline-box;
+  margin-bottom: 0px;
+  .flash {
+    background: $color_16;
+    padding: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    .img {
+      margin: 0 auto;
+    }
+    img {
+      text-align: right;
+    }
+    .flash-text {
+      margin-left: 0;
+    }
+    h1 {
+      font-size: $size_p;
+      font-family: MontserratsemiBold, serif;
+      margin-top: 0;
+    }
+    p {
+      font-size: $size_p;
+      font-family: MontserratLight, serif;
+      &.money {
+        font-size: $size_h;
+        text-align: right;
+      }
+    }
+  }
+}
+
+footer {
+  @include footer;
+}
+

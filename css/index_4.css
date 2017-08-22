@@ -14,7 +14,7 @@
 /*size h1 */
 /*height of input and content form*/
 /*size back*/
-body, header, content, footer .container { font-family: MontserratLight, serif; width: 100%; }
+body, header, content, footer, .container { font-family: MontserratLight, serif; width: 100%; }
 
 header { padding-top: 20px; }
 
