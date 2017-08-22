@@ -18,10 +18,17 @@ header {
       font-size: $size_p;
     }
   }
+  .header_choose {
+    margin-top: 0;
+  }
+  h1 {
+    font-size: $size_h;
+    font-family: MontserratLight, serif;
+  }
 }
 
 .content-fluid {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -53,6 +60,7 @@ content {
       font-family: MontserratLight, serif;
       &.money {
         font-size: $size_h;
+        line-height: 60px;
         text-align: right;
       }
     }

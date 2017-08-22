@@ -1,0 +1,108 @@
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf); }
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+/*Color from left filed*/
+/*Color from right filed*/
+/*Color text*/
+/*color $color_content_12*/
+/*color bg 2*/
+/*color opacity*/
+/*colorfooter*/
+/*color of 12*/
+/*size of p content*/
+/*size p small*/
+/*size h1 */
+/*height of input and content form*/
+/*size back*/
+body, header, content, footer, .container {
+  font-family: MontserratLight, serif;
+  width: 100%; }
+
+header {
+  padding-top: 20px; }
+
+.header-fixed {
+  padding-top: 185px; }
+
+.active {
+  background: #B4B9CE; }
+
+/*button header */
+.header_choose {
+  margin-top: 20px; }
+  .header_choose p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0; }
+    .header_choose p.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px; }
+    .header_choose p.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0; }
+
+/*button back*/
+.back {
+  font-size: 40px; }
+
+body {
+  font-size: 24px;
+  color: #02145a;
+  background: url("../imgs/bg14.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  height: -webkit-fill-available; }
+
+content {
+  margin: 50px 0px;
+  background: #fff;
+  display: -webkit-inline-box;
+  border-radius: 20px; }
+  content .title_header {
+    display: block;
+    overflow-y: scroll;
+    border-bottom: 1px solid;
+    padding: 30px 0; }
+    content .title_header h1 {
+      font-size: 13px;
+      font-family: MontserratsemiBold, serif; }
+    content .title_header img {
+      height: 25px; }
+  content .title_logo img {
+    height: 100px;
+    margin: 50px; }
+  content h1 {
+    font-size: 21px;
+    font-family: MontserratLight, serif;
+    padding: 0 40px; }
+  content p {
+    font-size: 13px;
+    font-family: MontserratLight, serif;
+    padding: 0 30px; }
+  content .footer_mod {
+    display: inline; }
+  content .footer_modal {
+    background: url("../imgs/field.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    margin: 60px 0 40px;
+    overflow-y: scroll; }
+    content .footer_modal p {
+      color: #fff;
+      font-family: MontserratsemiBold, serif;
+      font-size: 13px;
+      padding: 15px;
+      margin: 0px; }
+
+/*# sourceMappingURL=index_14.css.map */
