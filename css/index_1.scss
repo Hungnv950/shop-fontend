@@ -26,6 +26,9 @@ content {
   .content_top {
     @include field;
     margin-top: 80px;
+    p {
+      margin-bottom: 10px;
+    }
   }
   .form-group {
     margin-top: -10px;

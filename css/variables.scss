@@ -27,6 +27,8 @@ $color_bg_2: #fecdd4;
 $color_opacity: #9AA1BD;
 /*colorfooter*/
 $color_footer: #a3a5bb;
+/*color of 12*/
+$color_12: #FFCDD5;
 /*size of p content*/
 $size_p: 13px;
 /*size p small*/
@@ -97,6 +99,7 @@ header {
     font-family: MontserratsemiBold, serif;
     font-size: $size_p;
     padding: 15px;
+    margin: 0px;
   }
 }
 

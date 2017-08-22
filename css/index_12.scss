@@ -21,45 +21,99 @@ header {
 }
 
 content {
+  background: #FEB8C1;
+  display: -webkit-inline-box;
+  margin-top: 80px;
   .banner_content_1 {
     h1 {
       font-family: MontserratRegular, serif;
       font-size: $size_p_small;
-      padding: 10px;
+      padding: 15px 10px;
       background: #FFDED9;
       width: 100%;
       text-align: left;
+      margin-top: 0px;
+      margin-bottom: 0;
     }
   }
   .pro_1 {
+    border-bottom: 1px solid red;
+  }
 
-    .media {
-      background: #fff;
-      .media-body {
-        vertical-align: middle;
-        text-align: left;
-        h1.media-heading {
-          color: $color_text;
-          font-family: MontserratsemiBold, serif;
-          font-size: $size_p;
-        }
-        p {
-          color: $color_opacity;
-          font-size: $size_p;
-          font-family: MontserratLight, serif;
-        }
-        img {
-          height: 15px;
-          width: 15px;
-          position: absolute;
+  .media {
+    background: #fff;
+    padding-top: 20px;
+    .media-body {
+      vertical-align: middle;
+      text-align: left;
+      h1.media-heading {
+        color: $color_text;
+        font-family: MontserratsemiBold, serif;
+        font-size: $size_p;
+      }
+      p {
+        color: $color_opacity;
+        font-size: $size_p;
+        font-family: MontserratLight, serif;
+        &.icon {
+          margin-left: -5px;
         }
       }
-      .media-right {
-        vertical-align: middle;
-        padding-right: 20px;
-        img {
-          width: 14px;
-        }
+      img {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 0;
+      }
+    }
+    .media-right {
+      vertical-align: middle;
+      padding-right: 20px;
+      img {
+        width: 14px;
+      }
+    }
+  }
+
+  .list_price {
+    background: #fff;
+    .money {
+      h1 {
+        font-size: $size_h;
+        font-family: MontserratLight, serif;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+    }
+    .prop_content {
+      @include field;
+      width: 50%;
+      height: 100%;
+      p {
+        color: #fff;
+        font-size: $size_p;
+        font-family: MontserratsemiBold, serif;
+      }
+    }
+  }
+
+  .title_end {
+    p {
+      font-size: $size_p_small;
+      font-family: MontserratRegular,serif;
+      text-align: left;
+      padding: 20px 10px;
+      background: $color_12;
+    }
+  }
+
+  .bottom {
+    margin-bottom: 50px;
+    border: 0;
+    .media {
+      padding-top: 0;
+      .media-heading {
+        line-height: 40px;
       }
     }
   }
