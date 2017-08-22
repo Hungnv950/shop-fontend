@@ -7,6 +7,10 @@
   font-family: MontserratLight;
   src: url(../fonts/Montserrat-Light.ttf);
 }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
 
 /*Color from left filed*/
 $color_content_left: #fd4968;
@@ -42,6 +46,37 @@ body, header,content,footer .container {
   height: auto;
 }
 
+@mixin icon_shop {
+  background: url("../shop/index_4/cart.png");
+  width: 32px;
+  height: 28px;
+  margin-right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@mixin icon_map {
+  background: url("../shop/index_4/location.png");
+  width: 15px;
+  height: 40px;
+  //float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin header_h1_remove {
+  font-family: MontserratLight, serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+}
+@mixin header_title_h1 {
+  font-size: 13px;
+  font-family: MontserratLight, serif;
+  color: $color_text;
+  text-align: center;
 @mixin field {
   @include background("../imgs/field.png");
   text-align: center;
