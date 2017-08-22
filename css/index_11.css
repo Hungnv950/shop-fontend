@@ -51,4 +51,29 @@ header {
 .back {
   font-size: 40px; }
 
-/*# sourceMappingURL=variables.css.map */
+body {
+  font-size: 24px;
+  color: #02145a;
+  background: url("../imgs/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  height: -webkit-fill-available;
+  text-align: center; }
+
+header {
+  padding: 20px 0; }
+  header .header_top p {
+    font-size: 13px; }
+
+content img {
+  height: 100px;
+  margin-top: 150px; }
+content h1 {
+  font-size: 21px;
+  padding: 10px 100px; }
+content p {
+  font-size: 13px;
+  padding: 10px 120px; }
+
+/*# sourceMappingURL=index_11.css.map */
