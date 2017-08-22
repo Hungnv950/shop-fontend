@@ -9,7 +9,6 @@ header {
   padding-bottom: 35px;
   p {
     font-family: MontserratsemiBold, serif;
-    padding-top: 20px;
     color: $color_text;
     font-size: $size_p;
     letter-spacing: 2px;
@@ -27,6 +26,9 @@ content {
   .content_top {
     @include field;
     margin-top: 80px;
+    p {
+      margin-bottom: 10px;
+    }
   }
   .form-group {
     margin-top: -10px;
@@ -50,4 +52,5 @@ content {
 
 footer {
   @include footer;
+  margin-top: 100px;
 }

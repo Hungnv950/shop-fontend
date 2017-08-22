@@ -4,25 +4,58 @@
 @font-face {
   font-family: MontserratLight;
   src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
 /*Color from left filed*/
 /*Color from right filed*/
 /*Color text*/
-/*color bg 1*/
+/*color $color_content_12*/
 /*color bg 2*/
 /*color opacity*/
 /*colorfooter*/
+/*color of 12*/
 /*size of p content*/
+/*size p small*/
 /*size h1 */
 /*height of input and content form*/
-body {
+/*size back*/
+body, header, content, footer .container {
   font-family: MontserratLight, serif;
-  padding: 0;
-  margin: 0;
   width: 100%; }
+
+header {
+  padding-top: 20px; }
+
+.header-fixed {
+  padding-top: 185px; }
+
+.active {
+  background: #B4B9CE; }
+
+/*button header */
+.header_choose {
+  margin-top: 20px; }
+  .header_choose p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0; }
+    .header_choose p.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px; }
+    .header_choose p.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0; }
+
+/*button back*/
+.back {
+  font-size: 40px; }
 
 body {
   background: url("../imgs/bg1.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: auto; }
 
 header {
@@ -30,7 +63,6 @@ header {
   padding-bottom: 35px; }
   header p {
     font-family: MontserratsemiBold, serif;
-    padding-top: 20px;
     color: #02145a;
     font-size: 13px;
     letter-spacing: 2px; }
@@ -46,6 +78,7 @@ content {
   content .content_top {
     background: url("../imgs/field.png");
     background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
     text-align: center;
     width: 100%;
@@ -54,7 +87,10 @@ content {
       color: #fff;
       font-family: MontserratsemiBold, serif;
       font-size: 13px;
-      padding: 15px; }
+      padding: 15px;
+      margin: 0px; }
+    content .content_top p {
+      margin-bottom: 10px; }
   content .form-group {
     margin-top: -10px;
     margin-bottom: 0; }
@@ -111,15 +147,18 @@ content {
 footer {
   background: url("../imgs/field.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: auto;
   text-align: center;
   width: 100%;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  margin-top: 100px; }
   footer p {
     color: #fff;
     font-family: MontserratsemiBold, serif;
     font-size: 13px;
-    padding: 15px; }
+    padding: 15px;
+    margin: 0px; }
 
 /*# sourceMappingURL=index_1.css.map */

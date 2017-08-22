@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: MontserratRegular;
-  src: url(../fonts/Montserrat-Light.ttf);
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 /*Color from left filed*/
@@ -19,31 +19,41 @@ $color_content_left: #fd4968;
 $color_content_right: #fc624e;
 /*Color text*/
 $color_text: #02145a;
-/*color bg 1*/
-$color_bg_1: #feb9be;
+/*color $color_content_12*/
+$color_content_12: #FFDED9;
 /*color bg 2*/
 $color_bg_2: #fecdd4;
 /*color opacity*/
-$color_opacity: #e1e2eb;
+$color_opacity: #9AA1BD;
 /*colorfooter*/
 $color_footer: #a3a5bb;
+/*color of 12*/
+$color_12: #FFCDD5;
 /*size of p content*/
 $size_p: 13px;
+/*size p small*/
+$size_p_small: 11px;
 /*size h1 */
 $size_h: 21px;
 /*height of input and content form*/
 $height_input: 60px;
-
-body, .container {
+/*size back*/
+$size_back: 40px;
+body, header, content, footer .container {
   font-family: MontserratLight, serif;
   //padding: 0;
   //margin: 0;
   width: 100%;
 }
 
+header {
+  padding-top: 20px;
+}
+
 @mixin background($url) {
   background: url($url);
   background-size: cover;
+  background-repeat: no-repeat;
   height: auto;
 }
 
@@ -80,7 +90,6 @@ body, .container {
   color: $color_text;
   text-align: center;
 }
-
 @mixin field {
   @include background("../imgs/field.png");
   text-align: center;
@@ -90,6 +99,7 @@ body, .container {
     font-family: MontserratsemiBold, serif;
     font-size: $size_p;
     padding: 15px;
+    margin: 0px;
   }
 }
 
@@ -215,4 +225,35 @@ $margin_price: 0;
   background-color: #ffe5e0;
   height: 100%;
   overflow-y: auto;
+}
+=======
+.header-fixed {
+  padding-top: 185px;
+}
+
+.active {
+  background: #B4B9CE;
+}
+/*button header */
+.header_choose {
+  margin-top: 20px;
+  p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0;
+    &.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px;
+    }
+    &.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0;
+    }
+  }
+}
+
+/*button back*/
+.back {
+  font-size:$size_back;
 }
