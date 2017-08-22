@@ -1,38 +1,14 @@
 @import "variables";
 
+body {
+  font-size: 24px;
+  color: #fff;
+  @include background("../imgs/bg2.png");
+}
 header {
-  text-align: center;
-  padding-bottom: 35px;
-  p {
-    font-family: MontserratsemiBold, serif;
-    padding-top: 20px;
-    color: $color_text;
-    font-size: $size_p;
-    letter-spacing: 2px;
-  }
-  h1 {
-    color: $color_text;
-    letter-spacing: 2px;
-    font-size: $size_h;
-    padding: 0;
-  }
+
 }
 content {
-  @include background("../imgs/bg1.png");
-  position: relative;
-  height: 2000px;
-  .content_top {
-    @include field;
-    margin-top: 40px;
-  }
-  .form-control {
-    border-radius: 0;
-    border:0;
-    padding: 25px 10px;
-    margin: 1px;
-  }
-  .btn_choose {
-    padding: 25px 0;
-  }
-  @include on-off;
+
 }
+
