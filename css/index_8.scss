@@ -1,0 +1,177 @@
+@import "variables";
+
+@mixin h1_page_8 {
+  font-family: MontserratLight, serif;
+  font-size: 24px;
+  color: #02135a;
+  padding: 10px;
+}
+
+body {
+  .bg-home {
+    .content_feed_2 {
+      padding-top: 30px;
+      width: 100%;
+      @include background('../imgs/header_8.png');
+      .content_feed_2_close {
+        @include icon_shop;
+        &:hover {
+          width: 40px;
+          height: 80px;
+        }
+        &.cart_5 {
+          float: right;
+        }
+      }
+      h1 {
+        &.title {
+          @include header_title_h1;
+          font-family: MontserratBold, serif !important;
+        }
+
+      }
+    }
+
+    .content_feed_3_back {
+      @include icon_map;
+    }
+    .newfeed_2_top {
+      text-align: center;
+      position: relative;
+      z-index: 99999;
+      padding-top: 15px;
+      padding-bottom: 80px;
+      p {
+        font-family: MontserratLight, serif;
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 26px;
+      }
+      h1 {
+        @include header_title_h1;
+        font-size: 26px !important;
+        text-align: left;
+        color: #fff;
+      }
+      .icon_remove_banner {
+        margin-top: 20px;
+      }
+    }
+  }
+  content {
+    width: 100%;
+    height: auto;
+    .content_pad {
+      padding: 0 20px;
+      padding-bottom: 20px;
+    }
+    .content_pro {
+      //padding-left: 20px;
+    }
+    .list_pro {
+      @include background("../imgs/bg_index_82.png");
+      overflow-y: auto;
+      height: 100%;
+      padding-bottom: 40px;
+      h1 {
+        font-family: monsterRegular, serif;
+        @include h1_page_8;
+      }
+    }
+    h1 {
+      padding: 10px 15px;
+      @include h1_page_8;
+    }
+    .carousel-inner {
+      .product {
+        @include produce;
+        margin-top: 5px !important;
+        box-shadow: 3px 4px 23px #fa6c67;
+        border: 1px solid #ffa9b0;
+      }
+    }
+    .list_pro {
+      .product {
+        @include produce;
+        .content_price {
+          .price {
+            .money {
+              font-size: 14px;
+              font-family: MontserratBold, serif;
+              color: #02135a;
+            }
+            p {
+              font-size: 20px;
+              font-family: monsterBold, serif;
+              //padding: 30px 0px 30px 50px;
+              color: #02135a;
+            }
+          }
+          .icon_money {
+            .price_plus {
+              @include produce_price_plus;
+            }
+          }
+        }
+        .content_text {
+          .name {
+            @include produce_content_text_name;
+            font-size: 11px !important;
+          }
+          h1 {
+            font-family: MontserratRegular, serif;
+            @include h1_page_8;
+            padding-left: 15px !important;
+          }
+        }
+      }
+    }
+    .product {
+      margin-top: 15px !important;
+      //margin-left: -10px !important;
+      img {
+        @include produce_img;
+      }
+      .content_text {
+        @include produce_content_text_border;
+        .name {
+          @include produce_content_text_name;
+          font-size: 16px !important;
+        }
+        .own {
+          @include produce_content_text_own;
+          margin-top: -8px;
+          padding: 0 0 10px 15px !important;;
+        }
+
+      }
+    }
+    .content_price {
+      display: block;
+    }
+  }
+  .carousel {
+    @include background("../imgs/bg_index8.png");
+    margin-top: -50px;
+    height: 100%;
+    .product {
+      .content_price {
+        .price {
+          .money {
+            @include produce_price_money;
+            font-size: 16px !important;
+          }
+          p {
+            font-size: 20px;
+            font-family: monsterBold, serif;
+            color: #02135a;
+          }
+        }
+        .icon_money {
+          .price_plus {
+            @include produce_price_plus;
+          }
+        }
+      }
+    }
+  }
+}

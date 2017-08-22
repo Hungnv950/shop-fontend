@@ -194,7 +194,7 @@ header {
   color: #02135a;
 }
 @mixin produce_content_text_own {
-  font-size: 10px;
+  font-size: 11px;
   font-family: MontserratLight, serif;
   color: #a1a6c5;
   padding: 0 0 10px 10px;
@@ -204,7 +204,7 @@ header {
 $margin_price: 0;
 @mixin produce_price_money {
   font-size: 14px;
-  font-family: MontserratsemiBold, serif;
+  font-family:MontserratRegular, serif;
   color: #02135a;
 }
 @mixin produce_price_span {
