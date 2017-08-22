@@ -1,14 +1,126 @@
 @import "variables";
-body{
-  .content_feed_2 {
-    .newfeed_line {
-      background: url(../imgs/icon_line_4.png);
-      height: 40px;
+
+body {
+  .bg-home {
+    .content_feed_2 {
+      padding-top: 30px;
       width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
+      @include background('../shop/index_4/header.png');
+      .content_feed_2_close {
+        @include icon_shop;
+        &:hover {
+          width: 40px;
+          height: 80px;
+        }
+        &.cart_5 {
+          float: right;
+        }
+      }
+      h1 {
+        @include header_title_h1;
+      }
+    }
+
+    .content_feed_3_back {
+      @include icon_map;
+    }
+    .newfeed_2_top {
+      text-align: center;
       position: relative;
-      top: 6px;
+      z-index: 99999;
+      padding-top: 15px;
+      padding-bottom: 40px;
+      p {
+        font-family: MontserratLight, serif;
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 24px;
+      }
+      h1 {
+        @include header_title_h1;
+      }
+      .icon_remove_banner {
+        background-image: url(../shop/index_4/remove.png);
+        width: 25px;
+        height: 26px;
+        float: right;
+        background-size: cover;
+        margin-right: 15px;
+        margin-top: 20px;
+      }
+    }
+
+  }
+  content {
+    width: 100%;
+    padding-bottom: 50px;
+    @include background("../shop/index_4/bg_content.png");
+    margin-top: -30px;
+    position: absolute;
+    height: 100%;
+    .carousel{
+      margin-top: 30px;
+    }
+    .carousel-inner {
+      padding-bottom: 50px;
+      h1 {
+        @include header_title_h1;
+        font-size: 24px;
+        text-align: left!important;
+      }
+    }
+    .content_pad {
+      padding: 0 20px;
+    }
+
+    .product {
+      background: #fff;
+      border: 1px solid #ffa9b0;
+      border-radius: 7px;
+      margin-top: 30px;
+      box-shadow: 0 1px 90px #fa6c66;
+      margin-right: 20px;
+      display: inline-block;
+      img {
+        padding: 50px;
+        width: 90%;
+      }
+      .content_text {
+        border-top: 1px solid #bdc0d3;
+        border-bottom: 1px solid #bdc0d3;
+        .name {
+          font-size: 15px;
+          font-family: MontserratLight,serif;
+          padding: 10px 0 0 15px;
+          color: $color_text;
+        }
+        .own {
+          font-size: 12px;
+          font-family: MontserratLight,serif;
+          color: #a1a6c5;
+          padding: 0 0 15px 15px;
+          font-weight: normal;
+          letter-spacing: 0;
+        }
+      }
+      .content_price {
+        margin-top: 20px;
+        .price {
+          p {
+            font-size: 15px;
+            font-family: MontserratLight,serif;
+            color: $color_text;
+            font-weight: bold;
+          }
+        }
+        .price_plus {
+          background: url(../shop/index_4/plus.png);
+          color: $color_text;
+          padding: 10px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin-top: 5px;
+        }
+      }
     }
   }
 }
