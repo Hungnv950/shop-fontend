@@ -81,14 +81,17 @@ header {
 content {
   margin-top: 15px;
   display: -webkit-inline-box;
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
   content .flash {
     background: #FFD1CA;
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: left;
     border-radius: 5px; }
+    content .flash .pay {
+      padding-bottom: 5px; }
     content .flash .img {
-      margin: 0 auto; }
+      margin: 0 auto;
+      line-height: 0; }
     content .flash img {
       text-align: right; }
     content .flash .flash-text {
@@ -102,8 +105,9 @@ content {
       font-family: MontserratLight, serif; }
       content .flash p.money {
         font-size: 21px;
-        line-height: 60px;
         text-align: right; }
+    content .flash .flash-text h1 {
+      font-size: 18px; }
 
 footer {
   background: url("../imgs/field.png");

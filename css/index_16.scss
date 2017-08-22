@@ -35,14 +35,18 @@ header {
 content {
   margin-top: 15px;
   display: -webkit-inline-box;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   .flash {
     background: $color_16;
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: left;
     border-radius: 5px;
+    .pay {
+      padding-bottom: 5px;
+    }
     .img {
       margin: 0 auto;
+      line-height: 0;
     }
     img {
       text-align: right;
@@ -60,8 +64,12 @@ content {
       font-family: MontserratLight, serif;
       &.money {
         font-size: $size_h;
-        line-height: 60px;
         text-align: right;
+      }
+    }
+    .flash-text {
+      h1 {
+        font-size: 18px;
       }
     }
   }
