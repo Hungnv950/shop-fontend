@@ -34,6 +34,7 @@ content {
   .pro_1 {
 
     .media {
+      background: #fff;
       .media-body {
         vertical-align: middle;
         text-align: left;
@@ -48,7 +49,9 @@ content {
           font-family: MontserratLight, serif;
         }
         img {
-          width: 25px;
+          height: 15px;
+          width: 15px;
+          position: absolute;
         }
       }
       .media-right {
@@ -59,16 +62,6 @@ content {
         }
       }
     }
-  }
-  img {
-    height: 100px;
-    margin-top: 150px;
-  }
-  h1 {
-    font-size: $size_h;
-  }
-  p {
-    font-size: $size_p;
   }
 }
 

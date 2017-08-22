@@ -21,8 +21,6 @@
 /*size back*/
 body, header, content, footer .container {
   font-family: MontserratLight, serif;
-  padding: 0;
-  margin: 0;
   width: 100%; }
 
 header {
