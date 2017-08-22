@@ -1,0 +1,38 @@
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf); }
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+/*Color from left filed*/
+/*Color from right filed*/
+/*Color text*/
+/*color bg 1*/
+/*color bg 2*/
+/*color opacity*/
+/*size of p content*/
+/*size h1 */
+/*height of input and content form*/
+body {
+  font-family: MontserratLight, serif;
+  padding: 0;
+  margin: 0; }
+
+header {
+  text-align: center; }
+  header p {
+    font-family: MontserratsemiBold, serif;
+    padding-top: 20px;
+    color: #02145a;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px; }
+  header h1 {
+    font-family: MontserratLight, serif;
+    color: #02145a;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 21px;
+    padding: 0; }
+
+/*# sourceMappingURL=index_1.css.map */
