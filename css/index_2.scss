@@ -14,7 +14,7 @@ header {
   .header_top {
     text-align: center;
     .back {
-      font-size: 40px;
+      font-size: $size_back;
     }
     p {
       font-size: $size_p;
