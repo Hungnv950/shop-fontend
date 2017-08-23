@@ -7,7 +7,9 @@ body {
   height: -webkit-fill-available;
   text-align: center;
 }
-
+.active {
+  background: #B4B9CE;
+}
 header {
   padding: 20px 0;
   .header_top {
@@ -16,6 +18,7 @@ header {
     }
     p {
       font-size: $size_p;
+      font-family: MontserratsemiBold, serif;
     }
   }
 }

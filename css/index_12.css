@@ -62,12 +62,16 @@ body {
   height: -webkit-fill-available;
   text-align: center; }
 
+.active {
+  background: #B4B9CE; }
+
 header {
   padding: 20px 0; }
   header .header_top .back {
     font-size: 40px; }
   header .header_top p {
-    font-size: 13px; }
+    font-size: 13px;
+    font-family: MontserratsemiBold, serif; }
 
 content {
   background: #FEB8C1;

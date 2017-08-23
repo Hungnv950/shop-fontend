@@ -45,6 +45,11 @@ body {
 
   .title_logo {
     display: flex;
+    img {
+      height: 100px;
+      vertical-align: middle;
+      padding-left: 15px;
+    }
   }
 
   .content_modal .icon_logo {
