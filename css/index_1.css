@@ -72,7 +72,8 @@ header {
     color: #02145a;
     letter-spacing: 2px;
     font-size: 21px;
-    padding: 0; }
+    padding: 0;
+    font-family: MontserratLight, serif; }
 
 content {
   position: relative;
