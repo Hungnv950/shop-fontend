@@ -82,7 +82,7 @@ content {
     height: auto;
     text-align: center;
     width: 100%;
-    margin-top: 80px; }
+    margin-top: 90px; }
     content .content_top p {
       color: #fff;
       font-family: MontserratsemiBold, serif;
@@ -98,10 +98,12 @@ content {
     border-radius: 0;
     border: 0;
     padding: 25px 10px;
-    margin-bottom: 1px; }
+    margin-bottom: 1px;
+    color: #02145a; }
   content .btn_choose {
     padding: 25px 0;
-    background: #fff; }
+    background: #fff;
+    margin-bottom: 50px; }
     content .btn_choose p {
       font-size: 13px; }
   content .switch {

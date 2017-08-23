@@ -25,7 +25,7 @@ content {
   position: relative;
   .content_top {
     @include field;
-    margin-top: 80px;
+    margin-top: 90px;
     p {
       margin-bottom: 10px;
     }
@@ -39,10 +39,12 @@ content {
     border: 0;
     padding: 25px 10px;
     margin-bottom: 1px;
+    color: $color_text;
   }
   .btn_choose {
     padding: 25px 0;
     background: #fff;
+    margin-bottom: 50px;
     p {
       font-size: $size_p;
     }

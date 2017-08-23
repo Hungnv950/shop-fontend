@@ -11,6 +11,8 @@ header {
   position: fixed;
   color: #02145a;
   border-bottom: 1px solid #fff;
+  @include background("../imgs/bg2.png");
+  z-index: 9999;
   .header_top {
     text-align: center;
     .back {
@@ -18,6 +20,7 @@ header {
     }
     p {
       font-size: $size_p;
+      font-family: MontserratsemiBold, serif;
     }
   }
   .search {
@@ -43,14 +46,16 @@ header {
       color: #fff;
     }
     img {
-      height: 20px;
+      height: 15px;
     }
   }
 }
 
 content {
   p {
-    padding: 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: MontserratLight, serif;
   }
 }
 
