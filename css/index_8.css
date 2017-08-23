@@ -75,13 +75,16 @@ body .bg-home .content_feed_2 {
     font-family: MontserratsemiBold, serif;
     color: #02145a;
     text-align: center;
-    font-family: MontserratBold, serif !important; }
+    font-family: MontserratsemiBold, serif !important; }
 body .bg-home .content_feed_3_back {
   background: url("../shop/index_4/location.png");
   width: 15px;
   height: 40px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain; }
 body .bg-home .newfeed_2_top {
   text-align: center;
   position: relative;
@@ -104,7 +107,9 @@ body .bg-home .newfeed_2_top {
     margin-top: 20px; }
 body content {
   width: 100%;
-  height: auto; }
+  height: auto;
+  position: absolute;
+  padding-bottom: 20px; }
   body content .content_pad {
     padding: 0 20px;
     padding-bottom: 20px; }

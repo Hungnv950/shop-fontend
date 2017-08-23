@@ -26,7 +26,7 @@ body {
       h1 {
         &.title {
           @include header_title_h1;
-          font-family: MontserratBold, serif !important;
+          font-family: MontserratsemiBold, serif !important;
         }
 
       }
@@ -34,6 +34,9 @@ body {
 
     .content_feed_3_back {
       @include icon_map;
+      height: 35px;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     .newfeed_2_top {
       text-align: center;
@@ -60,6 +63,8 @@ body {
   content {
     width: 100%;
     height: auto;
+    position: absolute;
+    padding-bottom: 20px;
     .content_pad {
       padding: 0 20px;
       padding-bottom: 20px;
