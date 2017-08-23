@@ -60,7 +60,8 @@ body {
   background-repeat: no-repeat;
   height: auto;
   height: -webkit-fill-available;
-  text-align: center; }
+  text-align: center;
+  height: auto; }
 
 header {
   padding: 20px 0; }
@@ -72,9 +73,9 @@ content img {
   margin-top: 150px; }
 content h1 {
   font-size: 21px;
-  padding: 10px 100px; }
+  padding: 10px 60px; }
 content p {
   font-size: 13px;
-  padding: 10px 120px; }
+  padding: 10px 70px; }
 
 /*# sourceMappingURL=index_11.css.map */

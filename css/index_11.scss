@@ -6,6 +6,7 @@ body {
   @include background("../imgs/bg1.png");
   height: -webkit-fill-available;
   text-align: center;
+  height: auto;
 }
 
 header {
@@ -24,11 +25,11 @@ content {
   }
   h1 {
     font-size: $size_h;
-    padding: 10px 100px;
+    padding: 10px 60px;
   }
   p {
     font-size: $size_p;
-    padding: 10px 120px;
+    padding: 10px 70px;
   }
 }
 
