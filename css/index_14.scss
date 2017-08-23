@@ -1,0 +1,55 @@
+@import "variables";
+
+body {
+  font-size: 24px;
+  color: $color_text;
+  @include background("../imgs/bg14.png");
+  height: -webkit-fill-available;
+}
+
+content {
+  margin: 50px 0px;
+  background: #fff;
+  display: -webkit-inline-box;
+  border-radius: 20px;
+  .title_header {
+    display: block;
+    overflow-y: scroll;
+    border-bottom: 1px solid;
+    padding: 30px 0;
+    h1 {
+      font-size: $size_p;
+      font-family: MontserratsemiBold, serif;
+    }
+    img {
+      height: $size_close;
+    }
+  }
+  .title_logo {
+
+    img {
+      height: 100px;
+      margin: 50px;
+    }
+  }
+  h1 {
+    font-size: $size_h;
+    font-family: MontserratLight, serif;
+    padding: 0 40px;
+  }
+  p {
+    font-size: $size_p;
+    font-family: MontserratLight, serif;
+    padding: 0 30px;
+  }
+  .footer_mod {
+    display: inline;
+  }
+  .footer_modal {
+    @include field;
+    margin: 60px 0 40px;
+    overflow-y: scroll;
+  }
+}
+
+

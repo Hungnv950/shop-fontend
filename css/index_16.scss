@@ -1,0 +1,97 @@
+@import "variables";
+
+body {
+  font-size: 24px;
+  color: $color_text;
+  @include background("../imgs/bg1.png");
+  height: auto;
+  text-align: center;
+}
+
+header {
+  padding: 20px 0;
+  .header_top {
+    .back {
+      font-size: $size_back;
+    }
+    p {
+      font-size: $size_p;
+    }
+  }
+  .header_choose {
+    margin-top: -5px;
+  }
+  h1 {
+    font-size: $size_h;
+    font-family: MontserratLight, serif;
+    margin-top: 10px;
+  }
+}
+
+.content-fluid {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+content {
+  margin-top: 15px;
+  display: -webkit-inline-box;
+  margin-bottom: 0;
+  .flash {
+    background: $color_16;
+    padding: 30px 0;
+    text-align: left;
+    border-radius: 5px;
+    .pay {
+      padding-bottom: 5px;
+    }
+    .img {
+      margin: 0 auto;
+      line-height: 0;
+    }
+    img {
+      text-align: right;
+    }
+    .flash-text {
+      margin-left: 0;
+    }
+    h1 {
+      font-size: $size_p;
+      font-family: MontserratsemiBold, serif;
+      margin-top: 0;
+    }
+    p {
+      font-size: $size_p;
+      font-family: MontserratLight, serif;
+      &.money {
+        font-size: $size_h;
+        text-align: right;
+      }
+    }
+    .flash-text {
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+  .choose {
+    p {
+      text-align: left;
+      font-size: $size_p;
+      color: $color_text;
+      font-family: MontserratLight, serif;
+      span {
+        color: red;
+      }
+    }
+  }
+  .check-on-off {
+    text-align: right;
+  }
+  @include on-off;
+}
+
+footer {
+  @include footer;
+}
+

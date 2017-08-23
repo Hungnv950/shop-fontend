@@ -5,10 +5,57 @@ body {
   color: #fff;
   @include background("../imgs/bg2.png");
 }
+
 header {
-
+  padding: 30px 0 10px;
+  position: fixed;
+  color: #02145a;
+  border-bottom: 1px solid #fff;
+  @include background("../imgs/bg2.png");
+  z-index: 9999;
+  .header_top {
+    text-align: center;
+    .back {
+      font-size: $size_back;
+    }
+    p {
+      font-size: $size_p;
+      font-family: MontserratsemiBold, serif;
+    }
+  }
+  .search {
+    color: #fff;
+    margin-top: 25px;
+    .form-control {
+      border-radius: 0;
+      border: 0;
+      padding: 25px 10px;
+      background: none;
+      color: #fff;
+      font-size: 24px;
+      box-shadow: none;
+    }
+    .form-control::-webkit-input-placeholder {
+      color: rgba(255, 205, 213, 0.64);
+    }
+    .form-control:focus {
+      border-color: $color_content_left;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #fff;
+    }
+    img {
+      height: 15px;
+    }
+  }
 }
-content {
 
+content {
+  p {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: MontserratLight, serif;
+  }
 }
 
