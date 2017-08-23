@@ -69,10 +69,11 @@ header {
   header .header_top p {
     font-size: 13px; }
   header .header_choose {
-    margin-top: 0; }
+    margin-top: -5px; }
   header h1 {
     font-size: 21px;
-    font-family: MontserratLight, serif; }
+    font-family: MontserratLight, serif;
+    margin-top: 10px; }
 
 .content-fluid {
   margin-top: 50px;
@@ -81,7 +82,8 @@ header {
 content {
   margin-top: 15px;
   display: -webkit-inline-box;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  /* Rounded sliders */ }
   content .flash {
     background: #FFD1CA;
     padding: 30px 0;
@@ -108,6 +110,54 @@ content {
         text-align: right; }
     content .flash .flash-text h1 {
       font-size: 18px; }
+  content .choose p {
+    text-align: left;
+    font-size: 13px;
+    color: #02145a;
+    font-family: MontserratLight, serif; }
+    content .choose p span {
+      color: red; }
+  content .check-on-off {
+    text-align: right; }
+  content .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 30px; }
+  content .switch input {
+    display: none; }
+  content .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  content .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 1px;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  content input:checked + .slider {
+    background-color: #fd4968; }
+  content input:focus + .slider {
+    box-shadow: 0 0 1px #fd4968; }
+  content input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px); }
+  content .slider.round {
+    border-radius: 34px; }
+  content .slider.round:before {
+    border-radius: 50%; }
 
 footer {
   background: url("../imgs/field.png");

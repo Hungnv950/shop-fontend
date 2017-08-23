@@ -19,11 +19,12 @@ header {
     }
   }
   .header_choose {
-    margin-top: 0;
+    margin-top: -5px;
   }
   h1 {
     font-size: $size_h;
     font-family: MontserratLight, serif;
+    margin-top: 10px;
   }
 }
 
@@ -73,6 +74,21 @@ content {
       }
     }
   }
+  .choose {
+    p {
+      text-align: left;
+      font-size: $size_p;
+      color: $color_text;
+      font-family: MontserratLight, serif;
+      span {
+        color: red;
+      }
+    }
+  }
+  .check-on-off {
+    text-align: right;
+  }
+  @include on-off;
 }
 
 footer {
