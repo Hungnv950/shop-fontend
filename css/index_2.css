@@ -89,7 +89,7 @@ header {
       font-size: 24px;
       box-shadow: none; }
     header .search .form-control::-webkit-input-placeholder {
-      color: #9AA1BD; }
+      color: rgba(255, 205, 213, 0.64); }
     header .search .form-control:focus {
       border-color: #fd4968;
       outline: 0;

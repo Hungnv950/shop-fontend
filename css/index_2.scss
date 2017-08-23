@@ -36,7 +36,7 @@ header {
       box-shadow: none;
     }
     .form-control::-webkit-input-placeholder {
-      color: $color_opacity;
+      color: rgba(255, 205, 213, 0.64);
     }
     .form-control:focus {
       border-color: $color_content_left;
