@@ -52,6 +52,9 @@ body, header, content, footer, .container {
 
 header {
   padding-top: 20px;
+  p {
+    letter-spacing: 2px
+  }
 }
 
 @mixin background($url) {

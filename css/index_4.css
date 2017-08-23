@@ -17,6 +17,7 @@
 body, header, content, footer, .container { font-family: MontserratLight, serif; width: 100%; }
 
 header { padding-top: 20px; }
+header p { letter-spacing: 2px; }
 
 .header-fixed { padding-top: 185px; }
 

@@ -26,6 +26,8 @@ body, header, content, footer, .container {
 
 header {
   padding-top: 20px; }
+  header p {
+    letter-spacing: 2px; }
 
 .header-fixed {
   padding-top: 185px; }
