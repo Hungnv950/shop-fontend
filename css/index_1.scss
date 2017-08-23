@@ -49,6 +49,7 @@ content {
     p {
       font-size: $size_p;
       color: $color_text;
+      font-family: MontserratLight, serif;
     }
   }
   @include on-off;

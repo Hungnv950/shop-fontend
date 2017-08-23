@@ -1,4 +1,4 @@
-@import "footer";
+@import "footer.css";
 
 @font-face {
   font-family: MontserratsemiBold;
@@ -68,11 +68,10 @@ header {
 
 @mixin icon_shop {
   background: url("../shop/index_4/cart.png");
-  width: 32px;
-  height: 28px;
-  margin-right: 0;
-  background-size: cover;
+  width: 15px;
+  height: 35px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @mixin icon_map {
@@ -95,7 +94,7 @@ header {
 
 @mixin header_title_h1 {
   font-size: 13px;
-  font-family: MontserratLight, serif;
+  font-family: MontserratsemiBold, serif;
   color: $color_text;
   text-align: center;
 }

@@ -1,46 +1,4 @@
-#footer {
-  border-top: 1px solid #fff3f6;
-  -moz-box-shadow: 0px -11px 12px #fff4f6;
-  -webkit-box-shadow: 0px -11px 12px #fff4f6;
-  box-shadow: 0px -11px 12px #fff4f6;
-  bottom: 0 !important;
-  position: fixed;
-  background: #fff;
-  /*margin-left: -15px;*/
-  width: 100%;
-  padding-top: 10px; }
-
-h1, p {
-  font-family: monsterLight;
-  font-size: 14px; }
-
-#footer ul li p {
-  margin: 5px 0 5px -5px;
-  font-size: 11px; }
-
-#exTab1 .tab-content {
-  padding: 5px; }
-#exTab1 .nav-pills li {
-  width: 20%;
-  display: block;
-  margin: 0;
-  padding: 0; }
-  #exTab1 .nav-pills li a {
-    color: #a3a5bb;
-    border-radius: 0;
-    padding: 0 4px;
-    text-align: center;
-    display: block; }
-    #exTab1 .nav-pills li a .fa {
-      font-size: 12px;
-      font-weight: bold;
-      text-align: center;
-      display: block; }
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-  color: red !important;
-  background-color: #fff !important; }
-
+@import url(footer.css);
 @font-face {
   font-family: MontserratsemiBold;
   src: url(../fonts/Montserrat-SemiBold.ttf); }
@@ -149,7 +107,8 @@ content {
     margin-bottom: 50px; }
     content .btn_choose p {
       font-size: 13px;
-      color: #02145a; }
+      color: #02145a;
+      font-family: MontserratLight, serif; }
   content .switch {
     position: relative;
     display: inline-block;

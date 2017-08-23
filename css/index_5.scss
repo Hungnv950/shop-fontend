@@ -117,6 +117,9 @@ body {
       }
       .icon_remove_banner {
         margin-top: 20px;
+        img {
+          height: 25px;
+        }
       }
     }
 
@@ -135,6 +138,9 @@ body {
         height: 100%;
         margin-bottom: 25px;
         overflow: hidden;
+        .pro_item {
+          margin-top: -15px;
+        }
         h1 {
           @include h1_page_5;
           font-family: MontserratLight, serif;
@@ -153,6 +159,7 @@ body {
           }
           .own {
             @include produce_content_text_own;
+            font-family: MontserratRegular, serif;
           }
         }
         .content_price {

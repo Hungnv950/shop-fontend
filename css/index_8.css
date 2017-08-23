@@ -1,46 +1,4 @@
-#footer {
-  border-top: 1px solid #fff3f6;
-  -moz-box-shadow: 0px -11px 12px #fff4f6;
-  -webkit-box-shadow: 0px -11px 12px #fff4f6;
-  box-shadow: 0px -11px 12px #fff4f6;
-  bottom: 0 !important;
-  position: fixed;
-  background: #fff;
-  /*margin-left: -15px;*/
-  width: 100%;
-  padding-top: 10px; }
-
-h1, p {
-  font-family: monsterLight;
-  font-size: 14px; }
-
-#footer ul li p {
-  margin: 5px 0 5px -5px;
-  font-size: 11px; }
-
-#exTab1 .tab-content {
-  padding: 5px; }
-#exTab1 .nav-pills li {
-  width: 20%;
-  display: block;
-  margin: 0;
-  padding: 0; }
-  #exTab1 .nav-pills li a {
-    color: #a3a5bb;
-    border-radius: 0;
-    padding: 0 4px;
-    text-align: center;
-    display: block; }
-    #exTab1 .nav-pills li a .fa {
-      font-size: 12px;
-      font-weight: bold;
-      text-align: center;
-      display: block; }
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-  color: red !important;
-  background-color: #fff !important; }
-
+@import url(footer.css);
 @font-face {
   font-family: MontserratsemiBold;
   src: url(../fonts/Montserrat-SemiBold.ttf); }
@@ -103,11 +61,10 @@ body .bg-home .content_feed_2 {
   height: auto; }
   body .bg-home .content_feed_2 .content_feed_2_close {
     background: url("../shop/index_4/cart.png");
-    width: 32px;
-    height: 28px;
-    margin-right: 0;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    width: 15px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain; }
     body .bg-home .content_feed_2 .content_feed_2_close:hover {
       width: 40px;
       height: 80px; }
@@ -115,7 +72,7 @@ body .bg-home .content_feed_2 {
       float: right; }
   body .bg-home .content_feed_2 h1.title {
     font-size: 13px;
-    font-family: MontserratLight, serif;
+    font-family: MontserratsemiBold, serif;
     color: #02145a;
     text-align: center;
     font-family: MontserratBold, serif !important; }
@@ -137,7 +94,7 @@ body .bg-home .newfeed_2_top {
     font-size: 26px; }
   body .bg-home .newfeed_2_top h1 {
     font-size: 13px;
-    font-family: MontserratLight, serif;
+    font-family: MontserratsemiBold, serif;
     color: #02145a;
     text-align: center;
     font-size: 26px !important;
