@@ -34,8 +34,6 @@ header p { letter-spacing: 2px; }
 
 .header-fixed { padding-top: 185px; }
 
-.active { background: #B4B9CE; }
-
 /*button header */
 .header_choose { margin-top: 20px; }
 .header_choose p { font-family: MontserratRegular, serif; font-size: 11px; padding: 8px 0; }
