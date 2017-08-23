@@ -1,0 +1,310 @@
+@import "variables";
+
+@mixin total_pro_h1 {
+  color: #02145a;
+  font-family: monsterBold, serif;
+  font-size: 16px;
+}
+
+@mixin list_pro_pre {
+  border-right: 2px solid #f0b9b9;
+  line-height: 10;
+  text-align: center;
+}
+
+$padding_text: 5px 15px;
+@mixin total_pro_bg {
+  height: 150px;
+  padding: 30px;
+  margin-top: 143px;
+  border-top: 2px solid #f0b9b9;
+  background: #ffdbe3; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* Standard syntax */
+}
+
+@mixin total_pro_h1 {
+  color: #02145a;
+  font-family: MontserratBold, serif;
+  font-size: 16px;
+}
+
+@mixin total_pro_money {
+  text-align: center;
+  font-size: 20px;
+  font-family: monsterBold, serif;
+}
+
+@mixin list_pro_pre {
+  border-right: 2px solid #f0b9b9;
+  line-height: 10;
+  text-align: center;
+}
+
+@mixin total_pro_bg {
+  height: 150px;
+  padding: 30px;
+  margin-top: 143px;
+  border-top: 2px solid #f0b9b9;
+  background: #ffdbe3; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #ffdbe3, #ffdfd8); /* Standard syntax */
+}
+
+@mixin total_pro_money {
+  text-align: center;
+  font-size: 20px;
+  font-family: MontserratRegular, serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  p {
+    font-size: 20px;
+    font-family: monsterRegular, serif;
+    //color: #fff;
+    letter-spacing: 3px;
+  }
+  header {
+    text-align: center;
+    background: #fff;
+    margin-bottom: 30px;
+    .line {
+      margin-top: 80px !important;
+    }
+    p {
+      padding-top: 40px;
+      font-family: monsterBold, serif;
+      color: #02135a;
+      //font-weight: bold;
+    }
+    .header_top {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      span {
+        &.back {
+          padding-top: 20px;
+          font-size: 40px;
+        }
+      }
+      p {
+        font-size: 13px;
+        padding-top: 30px;
+        font-family: MontserratBold, serif;
+      }
+    }
+    h1 {
+      padding-top: 50px;
+      font-size: 25px;
+      font-family: monsterLight, serif;
+      color: #02135a;
+    }
+    .header_choose {
+      padding: 15px 30px 20px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      p {
+        font-size: 11px;
+        font-family: MontserratRegular, serif;
+        padding: 10px 5px;
+        margin-bottom: 0;
+        &.left {
+          border: 1px solid #000;
+          border-right: 1px solid #000;
+          border-radius: 70px 0 0 70px;
+        }
+        &.right {
+          border: 1px solid #000;
+          border-radius: 0 70px 70px 0;
+        }
+      }
+    }
+    .active {
+      background: #b5bace;
+    }
+  }
+  //content page 10
+  content {
+    @include background("../imgs/bg_index10.png");
+    position: absolute;
+    height: 100% !important;
+
+    .banner_content_1 {
+      background-color: #ffdbe2;
+      background: -webkit-linear-gradient(-90deg, #ffdbe2, #ffdfd8); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(-90deg, #ffdbe2, #ffdfd8); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradivdient(-90deg, #ffdbe2, #ffdfd8); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(-90deg, #ffdbe2, #ffdfd8); /* Standard syntax */
+      margin-top: 50px;
+      height: 70px;
+      &.amazon{
+        //height: 50px!important;
+        margin-top: 10px!important;
+      }
+      .img_custom {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .content_title {
+        //padding: $padding_text;
+      }
+      .img_custom {
+        padding: 20px 15px;
+      }
+      h1 {
+        @include header_title_h1;
+        font-size: 11px !important;
+        font-family: MontserratRegular, serif;
+        text-align: left;
+        padding: 10px 0;
+      }
+    }
+    .pro_1 {
+      padding: 25px;
+      background: #fff;
+
+      .media-left {
+        img {
+          width: 80px;
+        }
+      }
+      .media-heading {
+        font-size: 13px !important;
+        @include total_pro_h1;
+
+      }
+      .media-body {
+        vertical-align: middle;
+        padding: 0 15px;
+        span {
+          color: #02145a;
+          font-family: MontserratLight, serif;
+          font-size: 13px;
+        }
+      }
+    }
+    .list_pro {
+      background: #fff;
+      height: 73px;
+      border-top: 2px solid #f0b9b9;
+      border-bottom: 2px solid #f0b9b9;
+      .pre {
+        line-height: 3 !important;
+        padding: 10px 0;
+        @include list_pro_pre;
+        span {
+          font-size: 30px;
+          color: #02145a;
+          padding: 9px;
+        }
+      }
+      .count_num {
+        line-height: 5 !important;
+        @include list_pro_pre;
+        h1 {
+          font-family: MontserratLight, serif;
+          font-size: 20px;
+          color: #02145a;
+        }
+      }
+      .next {
+        line-height: 3 !important;
+        padding: 10px 0;
+        @include list_pro_pre;
+        span {
+          font-size: 30px;
+          color: #02145a;
+          padding: 9px;
+        }
+      }
+      .remove {
+        line-height: 4 !important;
+        padding: 7px 0;
+        img {
+          width: 15px;
+          height: 15px
+        }
+        @include list_pro_pre;
+      }
+      .money {
+        span {
+          font-size: 20px;
+          color: #a2a6c6 !important;
+        }
+        h1 {
+          font-family: MontserratLight, serif !important;
+          font-size: 20px !important;
+          color: #a2a6c6 !important;
+          @include total_pro_h1;
+        }
+      }
+      .count_num {
+        padding: 9px;
+      }
+      .money {
+        padding: 8px;
+        text-align: center;
+      }
+    }
+    .total_pro {
+      height: 65px !important;
+      padding: 5px 0 !important;
+      margin-top: 0 !important;
+      border-top: none !important;
+      //margin-bottom: 25px;
+      @include total_pro_bg;
+      h1 {
+        font-size: 13px !important;
+        @include total_pro_h1;
+      }
+      .total_money {
+        padding: 20px !important;
+        @include total_pro_money;
+      }
+    }
+    .total_pro_2 {
+      border-top: 1px solid #f0b9b9 !important;
+      height: 65px !important;
+      padding: 5px 0px !important;
+      margin-top: 0 !important;
+      @include total_pro_bg;
+      h1 {
+        @include total_pro_h1;
+        font-size: 13px !important;
+        font-family: MontserratBold!important;
+      }
+      .total_money {
+        padding: 12px !important;
+        @include total_pro_money;
+      }
+    }
+    .total_pro_3 {
+      height: 65px !important;
+      padding: 5px 0px !important;
+      margin-bottom: 90px;
+      margin-top: 0 !important;
+      @include total_pro_bg;
+      h1 {
+        @include total_pro_h1;
+        font-size: 13px !important;
+        font-family: MontserratBold!important;
+      }
+      .total_money {
+        padding: 12px !important;
+        @include total_pro_money;
+      }
+    }
+  }
+  footer {
+    @include footer;
+  }
+}
